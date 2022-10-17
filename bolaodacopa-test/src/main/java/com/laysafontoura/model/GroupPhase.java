@@ -9,6 +9,15 @@ public class GroupPhase {
     @Column
     private String teams;
 
+    public GroupPhase(String idGroup, String teams) {
+        this.idGroup = idGroup;
+        this.teams = teams;
+    }
+
+    public GroupPhase() {
+    }
+
+    
     public NationalTeam updateRankingTeams(NationalTeam team){
         return team;
     }

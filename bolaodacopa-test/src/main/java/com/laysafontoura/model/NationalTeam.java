@@ -28,6 +28,21 @@ public class NationalTeam{
     @Column
     private int goalsAgainst;
 
+    public NationalTeam() {
+    }
+
+    public NationalTeam(int idCoutry, String coutry, int points, int played, int won, int lost, int drawn, int goalsFor, int goalsAgainst) {
+        this.idCoutry = idCoutry;
+        this.coutry = coutry;
+        this.points = points;
+        this.played = played;
+        this.won = won;
+        this.lost = lost;
+        this.drawn = drawn;
+        this.goalsFor = goalsFor;
+        this.goalsAgainst = goalsAgainst;
+    }
+    
     public int getIdCoutry() {
         return idCoutry;
     }

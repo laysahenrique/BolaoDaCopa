@@ -9,6 +9,20 @@ public class Match{
     private NationalTeam visitor;
     private String date;
 
+    public Match() {
+    }
+
+    public Match(NationalTeam home, int gameScore, int visitorGoals, int homeGoals, NationalTeam winner, NationalTeam visitor, String date) {
+        this.home = home;
+        this.gameScore = gameScore;
+        this.visitorGoals = visitorGoals;
+        this.homeGoals = homeGoals;
+        this.winner = winner;
+        this.visitor = visitor;
+        this.date = date;
+    }
+    
+    
     public float setBonus(Match match){
         float bonus = 0;
         return bonus;

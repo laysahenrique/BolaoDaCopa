@@ -6,6 +6,16 @@ public class Guess{
     private int visitorGoals;
     private String gameScore;
 
+    public Guess() {
+    }
+
+    public Guess(NationalTeam winner, int homeGoals, int visitorGoals, String gameScore) {
+        this.winner = winner;
+        this.homeGoals = homeGoals;
+        this.visitorGoals = visitorGoals;
+        this.gameScore = gameScore;
+    }
+
     public NationalTeam getWinner() {
         return winner;
     }

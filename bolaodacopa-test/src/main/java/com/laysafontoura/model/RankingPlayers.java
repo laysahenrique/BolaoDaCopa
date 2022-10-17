@@ -4,6 +4,14 @@ public class RankingPlayers{
     private Player player;
     private int points;
 
+    public RankingPlayers() {
+    }
+
+    public RankingPlayers(Player player, int points) {
+        this.player = player;
+        this.points = points;
+    }
+    
     public RankingPlayers updateRankingPlayers(RankingPlayers ranking){
         return ranking;
     }

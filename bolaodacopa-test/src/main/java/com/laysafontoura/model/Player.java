@@ -4,6 +4,14 @@ public class Player{
     private int idPlayer;
     private String name;
 
+    public Player() {
+    }
+
+    public Player(int idPlayer, String name) {
+        this.idPlayer = idPlayer;
+        this.name = name;
+    }
+    
     public Guess newGuess(Guess guess){
         return guess;
     }
